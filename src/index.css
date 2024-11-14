@@ -1,0 +1,191 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: "Pretendard";
+  src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Bareun_hipi";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/naverfont_01@1.0/Bareun_hipi.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cafe24Oneprettynight";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Oneprettynight.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  word-break: keep-all;
+}
+html {
+  -webkit-tap-highlight-color: transparent !important;
+  -webkit-text-size-adjust: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+html {
+  overflow-x: hidden;
+  -webkit-touch-callout: none;
+} /* -webkit-user-select:none; 모바일 드래그 막기 */
+body {
+  min-width: 320px;
+  max-width: 100%;
+  font-family: "Pretendard", sans-serif;
+  font-weight: 400;
+  color: #000000;
+  background: #dedede;
+} /* 맞는 폰트로 변경 해줘야함 */
+ul,
+ol,
+li,
+dl,
+dd,
+dt,
+input,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+b,
+input,
+button,
+textarea,
+fieldset,
+legend,
+td,
+th {
+  margin: 0px;
+  padding: 0px;
+}
+li {
+  list-style: none;
+}
+table,
+th,
+td {
+  border-collapse: collapse; /*border-spacing: 0;*/
+}
+input,
+textarea,
+button,
+select {
+  font-family: "Noto Sans KR", "Pretendard", sans-serif;
+  font-weight: 400;
+  color: #000000;
+}
+input {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+input[type="text"],
+input[type="tel"],
+input[type="number"],
+input[type="email"],
+input[type="password"] {
+  outline: none;
+}
+input[type="text"]::-ms-clear,
+input[type="tel"]::-ms-clear {
+  display: none;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+select::-ms-expand {
+  display: none;
+} /* IE 10, 11의 네이티브 화살표 숨기기 */
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  -webkit-transform: translate3d(0, 0, 0);
+}
+button {
+  overflow: visible\9;
+} /* button fix for ie8 */
+label {
+  cursor: pointer;
+}
+label img {
+  pointer-events: none;
+}
+input::-webkit-input-placeholder {
+  color: #999;
+}
+input::-moz-placeholder {
+  color: #999;
+}
+input:-moz-placeholder {
+  color: #999;
+}
+input:-ms-input-placeholder {
+  color: #999;
+}
+textarea::-webkit-input-placeholder {
+  color: #999;
+}
+textarea::-moz-placeholder {
+  color: #999;
+}
+textarea:-moz-placeholder {
+  color: #999;
+}
+textarea:-ms-input-placeholder {
+  color: #999;
+}
+input:focus::-webkit-input-placeholder {
+  color: transparent !important;
+}
+input:focus::-moz-placeholder {
+  color: transparent !important;
+}
+input:focus:-moz-placeholder {
+  color: transparent !important;
+}
+input:focus:-ms-input-placeholder {
+  color: transparent !important;
+}
+textarea:focus::-webkit-input-placeholder {
+  color: transparent !important;
+}
+textarea:focus::-moz-placeholder {
+  color: transparent !important;
+}
+textarea:focus:-moz-placeholder {
+  color: transparent !important;
+}
+textarea:focus:-ms-input-placeholder {
+  color: transparent !important;
+}
+a {
+  text-decoration: none;
+  color: #242424;
+}
+img {
+  display: block;
+  border: 0;
+  width: 100%;
+}
