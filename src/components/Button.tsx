@@ -30,7 +30,7 @@ export const ButtonBlack = styled.button`
   color: #595959;
   text-align: center;
   font-family: "Pretendard", sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 500;
   line-height: 25px;
