@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 import data from "@/data.json";
-import { ParagraphPret } from "@/components/Text";
+import { ParagraphPret, ParagraphPretBold } from "@/components/Text";
 
 const LocationInfo = () => {
   const { locationInfo } = data;
@@ -9,7 +9,7 @@ const LocationInfo = () => {
       {locationInfo.map((item, index) => {
         return (
           <Info key={index}>
-            <ParagraphPret>{item.title}</ParagraphPret>
+            <ParagraphPretBold>{item.title}</ParagraphPretBold>
             <ParagraphPret>{item.desc}</ParagraphPret>
           </Info>
         );
@@ -25,16 +25,16 @@ const InfoWrap = styled.div`
   gap: 15px;
   width: 100%;
   padding: 0 5px;
-  @media screen and (max-width: 375px) {
-    gap: 30px;
+  @media screen and (max-width: 400px) {
+    gap: 40px;
   }
 `;
 
 const Info = styled.div`
   display: flex;
   justify-content: space-between;
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 400px) {
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
   }
 `;

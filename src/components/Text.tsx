@@ -60,3 +60,8 @@ export const ParagraphPret = styled.p`
   text-align: left;
   white-space: pre-line;
 `;
+
+export const ParagraphPretBold = styled(ParagraphPret)`
+  font-size: 14px;
+  font-weight: 600;
+`;
