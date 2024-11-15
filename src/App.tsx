@@ -9,10 +9,7 @@ import { NavermapsProvider } from "react-naver-maps";
 
 function App() {
   return (
-    <NavermapsProvider
-      ncpClientId="MY_NAVERMAPS_CLIENT_ID"
-      // or finClientId, govClientId
-    >
+    <NavermapsProvider ncpClientId="wkb2ll76q4">
       <Container>
         <Wrapper>
           <Main />
