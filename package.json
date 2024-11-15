@@ -11,7 +11,9 @@
   },
   "dependencies": {
     "@emotion/styled": "^11.13.0",
+    "@types/aos": "^3.0.7",
     "@types/node": "^22.9.0",
+    "aos": "^2.3.4",
     "emotion": "^11.0.0",
     "kakao-js-sdk": "^1.2.3",
     "photoswipe": "^5.4.4",
