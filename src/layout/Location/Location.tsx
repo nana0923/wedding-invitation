@@ -3,7 +3,6 @@ import data from "@/data.json";
 import { Heading2, ParagraphCafe } from "@/components/Text";
 import Map from "@/layout/Location/Map";
 import LocationInfo from "@/layout/Location/LocationInfo";
-import ShareButtons from "@/layout/Location/ShareButtons";
 import MapButtons from "./MapButtons";
 
 const Location = () => {
@@ -20,7 +19,6 @@ const Location = () => {
       </MapContent>
       {/* 오시는길 */}
       <LocationInfo />
-      <ShareButtons />
     </>
   );
 };

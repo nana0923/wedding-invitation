@@ -5,6 +5,7 @@ import Main from "@/layout/Main/Main";
 import Gallery from "@/layout/Gallery/GalleryWrap";
 import Account from "@/layout/Account/Account";
 import Location from "@/layout/Location/Location";
+import ShareButtons from "@/layout/Share/ShareButtons";
 import { NavermapsProvider } from "react-naver-maps";
 
 function App() {
@@ -25,6 +26,9 @@ function App() {
         </Wrapper>
         <Wrapper>
           <Location />
+        </Wrapper>
+        <Wrapper>
+          <ShareButtons />
         </Wrapper>
       </Container>
     </NavermapsProvider>
