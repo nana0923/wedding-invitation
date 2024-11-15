@@ -2,6 +2,8 @@
 
 모바일 청첩장 포트폴리오 프로젝트입니다.
 
+![main.gif](main.gif)
+
 ## 스택 & 라이브러리 선정
 
 vite / React / Typescript
