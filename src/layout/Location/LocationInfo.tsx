@@ -25,6 +25,7 @@ const InfoWrap = styled.div`
   gap: 15px;
   width: 100%;
   padding: 0 5px;
+  margin: 10px 0;
   @media screen and (max-width: 400px) {
     gap: 40px;
   }
