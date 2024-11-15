@@ -36,7 +36,7 @@ const ShareButtons = () => {
         content: {
           title: shareInfo.title,
           description: shareInfo.desc,
-          imageUrl: "/thumbnail.jpg",
+          imageUrl: "https://wedding-invitation-snowy-xi.vercel.app/assets/main-DM2q9mt0.png",
           link: {
             mobileWebUrl: window.location.href,
             webUrl: window.location.href,
