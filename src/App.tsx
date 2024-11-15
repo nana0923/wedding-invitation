@@ -37,7 +37,7 @@ function App() {
         <Wrapper data-aos="fade-up">
           <Location />
         </Wrapper>
-        <Wrapper data-aos="fade-up">
+        <Wrapper data-aos="fade">
           <ShareButtons />
         </Wrapper>
       </Container>
