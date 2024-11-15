@@ -12,8 +12,8 @@ export const Heading1 = styled.p`
 
 export const Heading2 = styled.p`
   font-family: "Bareun_hipi", sans-serif;
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 28px;
+  line-height: 30px;
   margin: 30px 0;
   letter-spacing: 2.16px;
   white-space: pre-line;
@@ -23,8 +23,8 @@ export const Heading2 = styled.p`
 
 export const ParagraphHipi = styled.p`
   font-family: "Bareun_hipi", sans-serif;
-  font-size: 16px;
-  line-height: 18px;
+  font-size: 18px;
+  line-height: 25px;
   letter-spacing: 0.7px;
   white-space: pre-line;
   color: #595959;
@@ -34,7 +34,7 @@ export const ParagraphHipi = styled.p`
 
 export const ParagraphCafe = styled.p`
   font-family: "Cafe24Oneprettynight", sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 25px;
   color: #4174e8;
   text-align: center;
@@ -43,7 +43,7 @@ export const ParagraphCafe = styled.p`
 
 export const ParagraphCafeBlack = styled.p`
   font-family: "Cafe24Oneprettynight", sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 25px;
   color: #595959;
   text-align: center;
@@ -53,9 +53,9 @@ export const ParagraphCafeBlack = styled.p`
 
 export const ParagraphPret = styled.p`
   font-family: "Pretendard", sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 400;
-  line-height: 20px;
+  line-height: 22px;
   color: #595959;
   text-align: left;
   white-space: pre-line;

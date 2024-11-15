@@ -64,8 +64,8 @@ const AccordionHeader = styled.div<{ isActive: boolean }>`
 `;
 
 export const AccordionContent = styled.div`
-  font-size: 14px;
-  font-size: 500;
+  font-size: 16px;
+  font-weight: 500;
   text-align: justify;
   padding: 5px 15px;
   background-color: #ffffff;

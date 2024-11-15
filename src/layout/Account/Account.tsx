@@ -8,7 +8,7 @@ const Account = () => {
   const { hostInfo } = data;
   return (
     <>
-      <Heading2>마음전하실곳</Heading2>
+      <Heading2>마음 전하실 곳</Heading2>
       <AccordionContent>
         {hostInfo.map((host) => {
           return (
