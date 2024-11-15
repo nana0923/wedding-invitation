@@ -1,13 +1,19 @@
-import { ButtonWhite } from "@/components/Button";
 import styled from "@emotion/styled";
+import { ButtonWhite } from "@/components/Button";
+import data from "@/data.json";
 
 const Map = () => {
+  const { mapInfo } = data;
   return (
     <MapContent>
       <MyMap />
       <ButtonWrap>
-        <ButtonWhite>네이버 지도로 길찾기</ButtonWhite>
-        <ButtonWhite>카카오 맵으로 길찾기</ButtonWhite>
+        <ButtonWhite href={mapInfo.naverMap} target="_blank">
+          네이버 지도로 길찾기
+        </ButtonWhite>
+        <ButtonWhite href={mapInfo.kakaoMap} target="_blank">
+          카카오 맵으로 길찾기
+        </ButtonWhite>
       </ButtonWrap>
     </MapContent>
   );
