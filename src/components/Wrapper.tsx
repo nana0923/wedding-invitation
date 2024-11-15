@@ -7,9 +7,9 @@ const Wrapper = styled.section`
   flex-direction: column;
   color: #595959;
   width: 100%;
-  max-width: 100%;
+  max-width: 360px;
   box-sizing: border-box;
-  margin: 20px 0;
+  margin: 20px auto;
 `;
 
 export default Wrapper;

@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import styled from "@emotion/styled";
-import { ButtonBlue } from "@/components/Button";
+import { ButtonBlue, ButtonYellow } from "@/components/Button";
 import data from "@/data.json";
 
 const ShareButtons = () => {
@@ -59,7 +59,7 @@ const ShareButtons = () => {
 
   return (
     <ButtonWrap>
-      <ButtonBlue onClick={shareToKakao}>카카오톡 공유하기</ButtonBlue>
+      <ButtonYellow onClick={shareToKakao}>카카오톡 공유하기</ButtonYellow>
       <ButtonBlue onClick={handleCopy}>URL 복사하기</ButtonBlue>
     </ButtonWrap>
   );
@@ -68,8 +68,11 @@ const ShareButtons = () => {
 export default ShareButtons;
 
 const ButtonWrap = styled.div`
+  width: 100%;
   margin: 40px 0 20px;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   gap: 10px;
 `;

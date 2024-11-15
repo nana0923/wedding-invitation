@@ -5,7 +5,6 @@ export const ButtonWhite = styled.a`
   justify-content: center;
   align-items: center;
   width: 48%;
-  height: 29px;
   padding: 2px 20px 2px 18px;
   border-radius: 5px;
   border: 1px solid #4174e8;
@@ -16,7 +15,7 @@ export const ButtonWhite = styled.a`
   font-size: 12px;
   font-style: normal;
   font-weight: 500;
-  line-height: 25px;
+  line-height: 20px;
   cursor: pointer;
 `;
 
@@ -24,8 +23,6 @@ export const ButtonBlack = styled.button`
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: auto;
-  height: 29px;
   padding: 2px 20px 2px 18px;
   border-radius: 5px;
   border: 1px solid #595959;
@@ -42,11 +39,10 @@ export const ButtonBlack = styled.button`
 `;
 
 export const ButtonBlue = styled.button`
-  display: inline-flex;
+  display: flex;
   justify-content: center;
   align-items: center;
-  width: 164px;
-  height: 40px;
+  width: 70%;
   padding: 7px 36px 8px 35px;
   border-radius: 5px;
   background: #4174e8;
@@ -58,4 +54,9 @@ export const ButtonBlue = styled.button`
   font-weight: 500;
   line-height: 25px;
   cursor: pointer;
+`;
+
+export const ButtonYellow = styled(ButtonBlue)`
+  background: #f9e000;
+  color: #595959;
 `;

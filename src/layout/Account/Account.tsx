@@ -27,5 +27,5 @@ export default Account;
 
 const AccordionContent = styled.div`
   width: 100%;
-  padding: 10px 30px;
+  padding: 10px 0;
 `;

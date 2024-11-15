@@ -24,10 +24,17 @@ const InfoWrap = styled.div`
   flex-direction: column;
   gap: 15px;
   width: 100%;
-  padding: 0 15px;
+  padding: 0 5px;
+  @media screen and (max-width: 375px) {
+    gap: 30px;
+  }
 `;
 
 const Info = styled.div`
   display: flex;
   justify-content: space-between;
+  @media screen and (max-width: 375px) {
+    flex-direction: column;
+    gap: 20px;
+  }
 `;
