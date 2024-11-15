@@ -41,6 +41,11 @@ export const ParagraphCafe = styled.p`
   white-space: pre-line;
 `;
 
+export const ParagraphCafeSmall = styled.span`
+  font-size: 14px;
+  line-height: 25px;
+`;
+
 export const ParagraphCafeBlack = styled.p`
   font-family: "Cafe24Oneprettynight", sans-serif;
   font-size: 18px;

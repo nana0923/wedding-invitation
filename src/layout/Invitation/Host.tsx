@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 import data from "@/data.json";
 import heartIcon from "@/assets/icons/heart.png";
 import { BrideAndGroom } from "@/types/data.ts";
-import { ParagraphCafe } from "@/components/Text";
+import { ParagraphCafe, ParagraphCafeSmall } from "@/components/Text";
 import React from "react";
 
 const Host = () => {
@@ -64,9 +64,4 @@ const Dot = styled.span`
 const HeartImg = styled.img`
   width: 27px;
   height: 25px;
-`;
-
-const ParagraphCafeSmall = styled.span`
-  font-size: 12px;
-  line-height: 25px;
 `;
