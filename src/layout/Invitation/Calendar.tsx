@@ -128,7 +128,6 @@ const EventText = styled(ParagraphCafeBlack)`
 
 const CalendarBox = styled.div`
   padding: 5px;
-  border-radius: 20px;
 `;
 
 const WeekDaysRow = styled.div`
