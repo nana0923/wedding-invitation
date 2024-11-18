@@ -100,8 +100,10 @@ const Calendar = () => {
     <>
       <CalenderWrap>
         <EventDate>{renderEventDate()}</EventDate>
-        {renderWeekDays()}
-        <WeeksWrap>{renderCalendar()}</WeeksWrap>
+        <CalendarBox>
+          {renderWeekDays()}
+          <WeeksWrap>{renderCalendar()}</WeeksWrap>
+        </CalendarBox>
         <Message>{renderLeftDayMessage()}</Message>
       </CalenderWrap>
     </>
@@ -122,6 +124,12 @@ const EventDate = styled.div`
 
 const EventText = styled(ParagraphCafeBlack)`
   font-size: 20px;
+`;
+
+const CalendarBox = styled.div`
+  border: 1px solid #6b6a6a3d;
+  padding: 5px;
+  border-radius: 20px;
 `;
 
 const WeekDaysRow = styled.div`
