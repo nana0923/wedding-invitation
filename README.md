@@ -18,6 +18,8 @@ vite / React / Typescript
 - [react-naver-maps](https://zeakd.github.io/react-naver-maps/) : 리액트에서 쉽게 네이버지도 API를 사용할 수 있도록 만들어진 라이브러리
 - [vite-plugin-svgr](https://www.npmjs.com/package/vite-plugin-svgr) : vite에서 svg를 사용하기 위해 사용.
 - [kakao-js-sdk](https://developers.kakao.com/docs/latest/ko/kakaologin/js) : 카카오톡 공유하기 기능을 위한 라이브러리
+- date-fns : 날짜 처리 라이브러리
+- aos : 스크롤 애니메이션 라이브러리
 
 ## 프로젝트 설치 및 실행 방법
 

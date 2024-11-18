@@ -36,6 +36,7 @@ export const ParagraphCafe = styled.p`
   font-family: "Cafe24Oneprettynight", sans-serif;
   font-size: 18px;
   line-height: 25px;
+  font-weight: 400;
   color: #4174e8;
   text-align: center;
   white-space: pre-line;

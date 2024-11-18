@@ -2,6 +2,7 @@ import styled from "@emotion/styled";
 import data from "@/data.json";
 import { Heading2, ParagraphCafeBlack, ParagraphHipi } from "@/components/Text";
 import Host from "@/layout/Invitation/Host";
+import Calendar from "@/layout/Invitation/Calendar";
 
 const Invitation = () => {
   const { greeting } = data;
@@ -13,6 +14,7 @@ const Invitation = () => {
       <Border />
       <Host />
       <ParagraphCafeBlack>{greeting.eventDetail}</ParagraphCafeBlack>
+      <Calendar date={greeting.date} groom={greeting.host.groom.name} bride={greeting.host.bride.name} />
     </>
   );
 };
