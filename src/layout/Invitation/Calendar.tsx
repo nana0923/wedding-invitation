@@ -28,8 +28,8 @@ const Calendar = () => {
     const eventDateText = `${year}년 ${month}월 ${day}일 ${yoil}요일`;
     return (
       <>
-        <ParagraphCafeBlack>{eventDateText}</ParagraphCafeBlack>
-        <ParagraphCafeBlack>{eventTime}</ParagraphCafeBlack>
+        <EventText>{eventDateText}</EventText>
+        <EventText>{eventTime}</EventText>
       </>
     );
   };
@@ -97,14 +97,14 @@ const Calendar = () => {
     }
   };
   return (
-    <p>
+    <>
       <CalenderWrap>
         <EventDate>{renderEventDate()}</EventDate>
         {renderWeekDays()}
         <WeeksWrap>{renderCalendar()}</WeeksWrap>
         <Message>{renderLeftDayMessage()}</Message>
       </CalenderWrap>
-    </p>
+    </>
   );
 };
 
@@ -118,6 +118,10 @@ const CalenderWrap = styled.div`
 
 const EventDate = styled.div`
   margin-bottom: 20px;
+`;
+
+const EventText = styled(ParagraphCafeBlack)`
+  font-size: 20px;
 `;
 
 const WeekDaysRow = styled.div`
