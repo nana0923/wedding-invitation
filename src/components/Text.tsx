@@ -53,7 +53,6 @@ export const ParagraphCafeBlack = styled.p`
   line-height: 25px;
   color: #595959;
   text-align: center;
-  margin-top: 10px;
   white-space: pre-line;
 `;
 

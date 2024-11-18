@@ -1,16 +1,20 @@
 import styled from "@emotion/styled";
 import { ParagraphCafeBlack } from "@/components/Text";
 import { format, startOfMonth, endOfMonth, eachDayOfInterval, startOfWeek, endOfWeek, isSameDay, differenceInDays, startOfDay } from "date-fns";
+import data from "@/data.json";
 
-interface ICalendarProps {
-  date: string; // 받아올 날짜 (예: '2024-11-01'),
-  groom: string; // 신랑 이름
-  bride: string; // 신부 이름
-}
+const { host, eventDate, eventTime } = data.greeting;
 
-const Calendar: React.FC<ICalendarProps> = ({ date, groom, bride }) => {
-  const currentDate = new Date(date);
+const Calendar = () => {
+  const currentDate = new Date(eventDate);
   const today = new Date();
+  const year = currentDate.getFullYear();
+  const month = currentDate.getMonth() + 1;
+  const day = currentDate.getDate();
+  const dayOfWeek = currentDate.getDay();
+  const weekDays = ["일", "월", "화", "수", "목", "금", "토"];
+  const yoil = weekDays[dayOfWeek];
+
   const startOfMonthDate = startOfMonth(currentDate);
   const endOfMonthDate = endOfMonth(currentDate);
   const startOfWeekDate = startOfWeek(startOfMonthDate); // 달력 첫 번째 주의 시작 날짜
@@ -18,6 +22,30 @@ const Calendar: React.FC<ICalendarProps> = ({ date, groom, bride }) => {
   const daysLeft = differenceInDays(startOfDay(currentDate), startOfDay(today));
 
   const days = eachDayOfInterval({ start: startOfWeekDate, end: endOfWeekDate });
+
+  // 날짜,시간 렌더링
+  const renderEventDate = () => {
+    const eventDateText = `${year}년 ${month}월 ${day}일 ${yoil}요일`;
+    return (
+      <>
+        <ParagraphCafeBlack>{eventDateText}</ParagraphCafeBlack>
+        <ParagraphCafeBlack>{eventTime}</ParagraphCafeBlack>
+      </>
+    );
+  };
+
+  // 요일 이름 렌더링
+  const renderWeekDays = () => {
+    return (
+      <WeekDaysRow>
+        {weekDays.map((day, index) => (
+          <WeekDay key={index} isSaturday={index === 6} isSunday={index === 0}>
+            {day}
+          </WeekDay>
+        ))}
+      </WeekDaysRow>
+    );
+  };
 
   // 달력 렌더링
   const renderCalendar = () => {
@@ -54,7 +82,7 @@ const Calendar: React.FC<ICalendarProps> = ({ date, groom, bride }) => {
     if (daysLeft > 0) {
       return (
         <>
-          {groom}♥{bride} 결혼식이 <MessageBold>{daysLeft}</MessageBold>일 남았습니다
+          {host.groom.name}♥{host.bride.name} 결혼식이 <MessageBold>{daysLeft}</MessageBold>일 남았습니다
         </>
       );
     } else if (daysLeft == 0) {
@@ -71,6 +99,8 @@ const Calendar: React.FC<ICalendarProps> = ({ date, groom, bride }) => {
   return (
     <p>
       <CalenderWrap>
+        <EventDate>{renderEventDate()}</EventDate>
+        {renderWeekDays()}
         <WeeksWrap>{renderCalendar()}</WeeksWrap>
         <Message>{renderLeftDayMessage()}</Message>
       </CalenderWrap>
@@ -84,6 +114,27 @@ const CalenderWrap = styled.div`
   width: 100%;
   max-width: 330px;
   margin: 30px auto;
+`;
+
+const EventDate = styled.div`
+  margin-bottom: 20px;
+`;
+
+const WeekDaysRow = styled.div`
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  text-align: center;
+  font-weight: 400;
+`;
+
+interface IWeekDayProps {
+  isSaturday: boolean;
+  isSunday: boolean;
+}
+
+const WeekDay = styled.div<IWeekDayProps>`
+  color: ${({ isSaturday, isSunday }) => (isSaturday ? "#4174e8" : isSunday ? "#E84149" : "#595959")};
+  padding: 13px;
 `;
 
 const WeeksWrap = styled.div`
@@ -112,7 +163,7 @@ const Day = styled.div<IDayProps>`
 `;
 
 const Message = styled(ParagraphCafeBlack)`
-  margin-top: 10px;
+  margin-top: 30px;
 `;
 
 const MessageBold = styled.span`
