@@ -4,6 +4,8 @@
 
 ![main_new.gif](main_new.gif)
 
+배포 사이트 : https://wedding-invitation-snowy-xi.vercel.app/
+
 ## 스택 & 라이브러리 선정
 
 vite / React / Typescript
