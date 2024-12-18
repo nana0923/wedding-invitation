@@ -13,6 +13,7 @@
     "@emotion/styled": "^11.13.0",
     "@types/aos": "^3.0.7",
     "@types/node": "^22.9.0",
+    "@vercel/analytics": "^1.4.1",
     "aos": "^2.3.4",
     "date-fns": "^4.1.0",
     "emotion": "^11.0.0",
